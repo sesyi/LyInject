@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/52789403/201512472-bffb949b-9f31-40f5-b782-852236de88e7.png)
 
-当需要注入DLL时只需要这样写，详细实现代码请参考`ConsoleApplication`中的源代码，如下实现了将`msg.dll`强行插入到`msgbox.exe`进程内。
+当需要注入DLL时只需要调用`DriveControl.InjectDll`传入参数即可，详细实现代码请参考`ConsoleApplication`中的源代码，如下实现了将`msg.dll`强行插入到`msgbox.exe`进程内。
 ```c
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
